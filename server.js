@@ -1,9 +1,11 @@
 const express = require('express');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
+const cors = require('cors'); // Import cors
 
 const app = express();
 app.use(express.json());
+app.use(cors());
 
 // Dummy user data
 const users = [
@@ -35,6 +37,6 @@ app.post('/login', (req, res) => {
   });
 });
 
-app.listen(3000, () => {
-  console.log('Server is running on port 3000');
+app.listen(3001, () => {
+  console.log('Server is running on port 3001');
 });

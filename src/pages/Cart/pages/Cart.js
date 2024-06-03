@@ -63,10 +63,10 @@ export default class Cart extends Component {
     return (
       <>
         <div className="container mt-5">
-          <div className="row">
-            <div className="col-6">
-              {/* Cart items */}
-            </div>
+          <div className="row justify-content-center">
+            {/* <div className="col-6">
+              Cart items
+            </div> */}
             <div className="col-6">
               <form className="row g-3" onSubmit={this.handleSubmit}>
                 <div className="col-md-6">
@@ -152,7 +152,7 @@ export default class Cart extends Component {
                 </div>
                 <div className="col-12 mt-3">
                   <button type="submit" className="btn btn-primary">
-                    Check out
+                    Register
                   </button>
                 </div>
               </form>

@@ -38,7 +38,13 @@ class Navbar extends Component {
           <Link to="/register" className="navLink">
             Register
           </Link>
-          <span className="cartCount"> Cart items: {cartCount}</span>
+          <Link to="/login" className="navLink">
+            Login
+          </Link>
+          <Link to="/login" className="navLink">
+            My Cart({cartCount + " Items"})
+          </Link>
+          {/* <span className="cartCount"> Cart items: {cartCount}</span> */}
         </div>
       </div>
     );
